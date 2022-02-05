@@ -13,17 +13,14 @@ body{
     display: flex;
     width: 100%;
     height: 80px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: aquamarine;
 }
 
 .nav-header{
     font-weight: bold;
     font-size: 24px;
     color: #3A3A3A;
-    margin-left: 34px;
-    padding-left: 25px;
 }
 
 .nav-items{
@@ -71,13 +68,16 @@ body{
 
 /* main body css */
 .container{
-    margin: 30px;
+   margin: 0 auto;
+    width: 1400px;
+
 }
 
 /* influencer section css */
 .influencer-section{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(2, 1fr); */
     margin: 30px;
     align-items: center;
     justify-items: center;
@@ -86,6 +86,7 @@ body{
 }
 
 .influencer-text{
+    flex: 50%;
     width: 585px;
     height: 135px;
     
@@ -151,7 +152,9 @@ body{
 }
 
 .influencer-image{
+    flex: 50%;
     display: flex;
+    justify-content: center;
 }
 
 .influencer-image:hover #circle{
@@ -180,7 +183,9 @@ body{
 /* second section css */
 .logo-section{
     display: flex;
+    flex-wrap: wrap;
     margin: 30px;
+    margin-top: 70px;
     align-items: center;
     justify-content: center;
 }
@@ -212,6 +217,7 @@ body{
     font-size: 28px;
     color: #3A3A3A;
     margin: 0px;
+    margin-bottom: 20px;
     
 }
 
@@ -430,3 +436,182 @@ body{
 }
 
 
+/* footer css */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0826;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text h2{
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.footer-text h3{
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon i{
+    margin-right: 10px;
+    color: #FFFFFF;
+}
+
+
+/* media query */
+
+/* small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    /* nav bar */
+    .nav-bar{
+        display: flex;
+        width: 350px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-header{
+        font-weight: bold;
+        font-size: 20px;
+        color: #3A3A3A;
+        padding-left: 50px;
+    }
+    
+    .nav-items{
+        display: none;
+    }
+
+    .container{
+        margin: 0px;
+        width: 350px;
+        
+    }
+
+    /* first section */
+    .influencer-section{
+        height: auto;
+    }
+
+    .influencer-text{
+        flex: 100%;
+        width: 350px;
+        height: auto;
+        padding-left: 20px;
+    }
+
+    .influencer-text-area{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        width: 350px;
+    }
+
+    .influencer-text-area h1{
+        font-size: 42px;
+        width: 350px;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+
+    .influencer-text-area p{
+        width: 300px;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    .button{
+        justify-content: left;
+    }
+
+    .influencer-image{
+        flex: 100%;
+        margin-top: 40px;
+        padding-left: 0px;
+        justify-content: flex-start;
+    }
+
+    #circle{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+    
+    }
+    
+    #camera{
+        position: relative;
+        top: 25px;
+        left: 15px;
+        width: 330px;
+        height: 310px;
+    
+    }
+
+
+    /* second section */
+    .logo-section {
+        justify-content: flex-start;
+        padding-left: 70px;
+    }
+    .company-logo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* third section */
+    .collection-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .collection-area {
+        display: flex;
+        padding-left: 20px;
+        justify-content: flex-start;
+        width: 320px;
+    }
+
+    .collection-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 80px;
+    }
+
+    /* fourth section */
+    .fourth-section{
+        display: none;
+    }
+
+    /* footer */
+    .footer{
+        width: 100%;
+    }
