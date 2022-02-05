@@ -411,7 +411,7 @@ body{
     padding: 10px 24px;
     width: 95px;
     height: 20px;
-    background:  #E02C6F ;
+    background:  #3A3A3A;
     border-radius: 40px;
     
 }
@@ -419,6 +419,7 @@ body{
 .get-started-button:hover{
     transform: scale(1.1);
     transition: 0.3s ease-in;
+    background:  #E02C6F ;
 }
 
 .get-started-button a{
