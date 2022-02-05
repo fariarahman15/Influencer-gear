@@ -48,15 +48,25 @@ body{
     color: #3A3A3A;
 }
 
+.nav-content li:hover a{
+    color: #E02C6D;
+}
+
+
 .nav-list{
     text-decoration: none;
 }
+
 
 .nav-icon i{
     margin-right: 34px;
     width: 24px;
     height: 24px;
     color: #3A3A3A;
+}
+
+.nav-icon i:hover{
+    color: #E02C6D;
 }
 
 
@@ -82,7 +92,17 @@ body{
     font-weight: bold;
     font-size: 52px;
     margin-top: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.influencer-text-area{
+    margin-bottom: 30px;
+}
+
+.influencer-text-area:hover h1{
+   transform: scale(1.02);
+   transition: 0.5s ease-in-out;
+   color: #E02C6D;
 }
 
 .influencer-text p{
@@ -106,6 +126,11 @@ body{
     border-radius: 41px;
 }
 
+.button:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+
 .button a{
     text-decoration: none;
     font-weight: bold;
@@ -120,6 +145,12 @@ body{
 
 .influencer-image{
     display: flex;
+}
+
+.influencer-image:hover #circle{
+    transform: scale(1.2);
+    transition: 1s ease-in-out;
+    overflow: hidden;
 }
 
 #circle{
@@ -157,11 +188,30 @@ body{
     margin-right: 60px;
 }
 
+.company-logo img:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+}
+
 
 /* third section */
-.third-section{
+.collection-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-header h2{
+    font-size: 28px;
+    color: #3A3A3A;
+    margin: 0px;
+    
+}
+
+.collection-area{
     display: flex;
     margin: 50px;
+    margin-bottom: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -170,7 +220,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-row-gap: 70px;
     margin-bottom: 30px;
 }
 .collection{
@@ -187,6 +237,12 @@ body{
     height: 256px;
     padding: 5px;
 
+}
+
+.collection:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 .collection-detail{
@@ -239,4 +295,36 @@ body{
 .collection-note{
     color: #787885;
     
+}
+
+.see-more{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+.see-more-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 24px;
+    width: 125px;
+    height: 30px;
+}
+
+.see-more-button:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+
+.see-more-button a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #E02C6F;
+}
+
+.see-more-button i{
+    color: #E02C6F;
 }
